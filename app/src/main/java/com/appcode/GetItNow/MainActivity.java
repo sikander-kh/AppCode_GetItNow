@@ -49,25 +49,12 @@ public class MainActivity extends AppCompatActivity
         String group_names[] = { "Lifestyle", "Entertainment", "Others"};
 
         String country_names[] = { "Bugis: Multi Cultural", "Buffet at Landmark", "Buffet at Landmark", "Cameroon",
-                "Netherlands", "chile", "Spain", "Australia", "Colombia",
-                "Greece", "Ivory Coast", "Japan", "Costa Rica", "Uruguay",
-                "Italy", "England", "France", "Switzerland", "Ecuador",
-                "Honduras", "Agrentina", "Nigeria", "Bosnia and Herzegovina",
-                "Iran", "Germany", "United States", "Portugal", "Ghana",
-                "Belgium", "Algeria", "Russia", "Korea Republic" };
+                "Netherlands", "chile", "Spain", "Australia", "Colombia"};
 
         int Images[] = { R.drawable.landmark1, R.drawable.landmark1,
                 R.drawable.landmark1, R.drawable.landmark1, R.drawable.landmark1,
                 R.drawable.landmark1, R.drawable.landmark1, R.drawable.landmark1,
-                R.drawable.landmark1, R.drawable.landmark1, R.drawable.landmark1,
-                R.drawable.landmark1, R.drawable.landmark1, R.drawable.landmark1,
-                R.drawable.right1, R.drawable.right1, R.drawable.right1,
-                R.drawable.right1, R.drawable.right1,
-                R.drawable.right1, R.drawable.right1, R.drawable.right1,
-                R.drawable.right1, R.drawable.right1, R.drawable.right1,
-                R.drawable.right1, R.drawable.right1, R.drawable.right1,
-                R.drawable.right1, R.drawable.right1, R.drawable.right1,
-                R.drawable.right1 };
+                R.drawable.landmark1};
 
         ArrayList<Group> list = new ArrayList<Group>();
 
