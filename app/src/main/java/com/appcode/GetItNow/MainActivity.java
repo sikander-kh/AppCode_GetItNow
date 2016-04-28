@@ -1,5 +1,7 @@
 package com.appcode.GetItNow;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
@@ -42,6 +45,15 @@ public class MainActivity extends AppCompatActivity
         ExpListItems = SetStandardGroups();
         ExpAdapter = new ExpandListAdapter(MainActivity.this, ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
+
+//        ExpandList.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+//                ClipData clip = ClipData.newPlainText("label", "Text to copy");
+//                clipboard.setPrimaryClip(clip);
+//            }
+//        });
     }
 
     public ArrayList<Group> SetStandardGroups() {
